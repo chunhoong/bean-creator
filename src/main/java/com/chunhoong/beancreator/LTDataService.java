@@ -1,6 +1,9 @@
 package com.chunhoong.beancreator;
 
-public class LTDataService implements DataService{
+import org.springframework.stereotype.Service;
+
+@Service("ltDataService")
+public class LTDataService implements DataService {
     @Override
     public Data getData() {
         Data data = new Data();
